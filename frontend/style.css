@@ -1,0 +1,460 @@
+/* css reset*/
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(160, 160, 214);
+    scroll-behavior: smooth;
+}
+:root{
+    --navbar-height:39px;
+}
+
+#header{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    height: 100px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Add this to align logo and navbar content */
+    background-color: transparent;
+}
+#logo{
+    margin: 14px 15px;
+    padding: auto;
+    margin-right: auto; /* Add this to push the logo to the left */
+}
+
+#navbar{
+    position: relative;
+    
+}
+#logo img{
+    height: 54px;
+    margin: 14px 20px;
+}
+
+#navbar ul{
+    display: flex;
+    text-align: right;
+}
+
+#navbar::before{
+    content: "";
+    background-color: transparent;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#navbar ul li{
+    list-style:none ;
+    font-size: 1.3 rem;    
+}
+
+#navbar ul li a{
+    color: black;
+    display: inline-block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    align-self: flex-end;
+}   
+
+#navbar ul li a:hover{
+    color: rgb(160, 160, 214);
+    background-color: white;
+}   
+
+#search-bar {
+    margin: 0 auto;
+    margin-right: 20px;
+  }
+  
+#search-input {
+    width: 250px;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+    font-size: 16px;
+}
+  
+#search-btn {
+    height: 30px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: black;
+    color: #080808;
+    cursor: pointer;
+}
+  
+#search-btn:hover {
+    background-color: black;
+}
+
+section{
+    position: relative;
+    padding-left: 200px ;
+}
+
+section img{
+    top: 100%;
+    margin-top: 90px;
+    height: 470px;
+    width: 470px;
+    position: relative;
+    object-fit: cover;
+    z-index: 1;
+}
+
+#text{
+    position: absolute;
+    top: 41%; 
+    left: 50%; 
+    transform: translate(0%,0%);
+    display: flex; 
+    justify-content: center;
+    align-items: center;  
+    font-size: 60px;
+    color: black;
+    z-index: 0;
+}
+
+#text2{
+    position: absolute;
+    top: 52%; 
+    left: 50%; 
+    transform: translate(0%, 0%);
+    display: flex; 
+    justify-content: center;
+    align-items: center;  
+    font-size: 20px;
+    color: black;
+    z-index: 0;
+}
+
+#backimages{
+    display: flex;
+    height: 275px; 
+    background-size: 40px; 
+    background-position: left; 
+    padding-left: 100px; 
+    position: relative; /* add this to make #about absolute positioning work */
+}
+
+.about{
+    position: relative;
+    padding: 100px;
+    text-align: justify;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.about_line{
+    text-align: center;
+    font-size: 50px;
+}
+.about h2{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.about p{
+    font-size: 1.2em;
+}
+
+.genre {
+    text-align: center;
+    font-size: 40px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+.genre h4 {
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 200px;
+    height: 145px;
+    background-color: #d3cdcd80;
+    border: 1px solid #0e0d0d;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 10px 10px;
+}
+                                        
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    
+}
+
+.card a:link{
+    color: black;
+    text-decoration:none ;
+}
+
+.card a:visited{
+    color: black;
+    text-decoration:none ;
+}
+
+.card a:hover{
+    color: rgb(255, 255, 255);
+    text-decoration:none ;
+}
+
+.contact h2{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.contact p{
+    font-size: 1.2em;
+    text-align: justify;
+    margin-left: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.contact .row {
+    margin: 60px 0 90px;
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+.contact .row .col {
+    padding: 0 10px;
+    width: calc(100% / 2 - 50px);
+}
+  
+.contact .col p {
+    margin-bottom: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+  
+.contact .col p i {
+    color: #7a7a7a;
+    margin-right: 10px;
+}
+
+.contact form input {
+    height: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid #080808;
+    background-color: #bebbbb;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+  
+.contact form textarea {
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    height: 50px;
+    outline: none;
+    resize: vertical;
+    border: 1px solid #0f0f0f;
+    background-color: #bebbbb;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+  
+.contact form button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 17px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #333;
+    transition: 0.2s ease;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+  
+.contact form button:hover {
+    background: #525252;
+}
+
+footer{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.fiction-home{
+    margin-right: 100px;
+}
+
+.fiction-text {
+    text-align: center;
+    font-size: 34px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.card-row {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+  
+.container {
+    width: 700px; /* adjust the width to fit two cards */
+    height: 400px;
+    margin: 20px;
+    perspective: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+.fiction-card {
+    width: 45%; /* adjust the width to fit two cards */
+    height: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+    margin: 0 10px; /* add some margin between cards */
+}
+
+.front img{
+    object-fit: fill;
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+}
+.front,
+.back {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.back {
+    background-color: rgba(158, 158, 161, 0.534);
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+  
+.fiction-card:hover {
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.back p{
+    background-color: transparent;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    margin: 10px;
+}
+
+.back a{
+    background-color: transparent;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    margin: 5px;
+}
+
+.back a:visited{
+    background-color: transparent;
+}
+ 
+.signup-box {
+    width: 360px;
+    height: 620px;
+    margin: auto;
+    background-color: rgb(160, 160, 214);
+    border-radius: 3px;
+}
+  
+.signin{
+    width: 360px;
+    height: 280px;
+    margin: auto;
+    border-radius: 3px;
+    background-color: rgb(160, 160, 214);
+}
+  
+.signup-box h1 ,.signin h1 {
+    text-align: center;
+    padding-top: 15px;
+}
+  
+.signup-box h4 {
+    text-align: center;
+}
+  
+.signup-box form {
+    width: 300px;
+    margin-left: 20px;
+}
+  
+.signup-box form label, .signin form label{
+    display: flex;
+    margin-top: 20px;
+    font-size: 18px;
+}
+  
+.signup-box form input , .signin form input {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 6px;
+    outline: none;
+}
+.signup-box input[type="button"], .signin input[type="button"] {
+    width: 320px;
+    height: 35px;
+    margin-top: 20px;
+    border: none;
+    background-color: #6e60a0;
+    color: white;
+    font-size: 18px;
+}
+.signup-box p {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+}
+  .para-2 {
+    text-align: center;
+    color: rgb(10, 10, 10);
+    font-size: 15px;
+    margin-top: -10px;
+}
+.para-2 a {
+    color: #000000;
+}
+

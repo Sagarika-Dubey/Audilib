@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" types="x-icon" href="/images/title_part_photo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audilib</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" ></script>
+</head>
+<body>
+    <top id="top">
+    <header>
+        <div id="header">
+            <nav id="navbar">
+                <div id="logo">
+                    <img src="/images/logo-trans.png" alt="AUDILIB">
+                </div>
+                <div id="search-bar">
+                    <input type="search" id="search-input" placeholder="Search">
+                    <img src="/images/seach-icon.png" width="25px" height="25px">
+                </div>          
+                <ul>
+                    <li> <a href="#home" id="home-link">HOME</a></li>
+                    <li> <a href="#about _us" id="about-us-link">ABOUT US</a></li>
+                    <li> <a href="#explore" id="explore-link">EXPLORE</a></li>
+                    <li> <a href="/register.html">SIGN UP</a></li>
+                </ul>
+                
+            </nav>
+        </div>
+    </header>
+    
+    <section>
+        <img src="/images/home_background_1.png" id="back_child_photo">
+        <h2 id="text"> AUDIOBOOKS</h2>
+        <h3 id="text2">LISTEN | LEARN | EXPLORE | IMPROVE </h3>
+    </section>
+    
+    <script>
+        let text = document.getElementById("text");
+        let back_child_photo = document.getElementById("back_child_photo");
+        let text2= document.getElementById("text2")
+
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+            back_child_photo.style.transform = `translateX(${value * 0}px)`;
+            text.style.transform = `translateX(${value * -1.1}px)`;
+            text2.style.transform = `translateX(${value * -1.1}px)`;
+        });
+    </script>
+    </top>
+
+    <main>
+        <div id="search-results"></div>
+        <div class="about" id="abouts">
+            <h3 class="about_line">ABOUT US✨</h3>   
+            <b>
+                Welcome to AudiLib, where stories come to life! At AudiLib, we believe in the transformative power of a good story. Whether you're commuting, working out, or simply relaxing at home, our extensive library of audiobooks provides a gateway to new worlds, ideas, and experiences. Ww have picks of audiobooks avaliable on YouTube all here so that even if you don't have inspiration of listening any specific book we can help you find one.<br><br>
+
+                <h3>Our Mission</h3>
+                Our mission is to make the joy of reading accessible to everyone, everywhere easily. We aim to enrich lives through the spoken word, offering a diverse range of audiobooks that cater to all tastes and preferences. From timeless classics and contemporary bestsellers to niche genres and independent authors, we have something for everyone.<br><br>
+
+                <ul style="list-style-type: disc;"></ul>
+                    <h3>What We Offer</h3>
+                    <li><b>Vast Selection:</b> Our catalog boasts thousands of titles across various genres, including fiction, non-fiction, self-help, biographies, and more. We constantly update our collection to ensure there's always something new to discover.</li>
+
+                    <li><b>High-Quality Narration:</b> We partner with professional voice actors and narrators who bring each story to life, enhancing your listening experience with their captivating performances.</li>
+
+                    <li><b>User-Friendly Experience:</b> Our platform is designed with you in mind. With easy navigation, personalized recommendations, and seamless playback, you can enjoy your favorite audiobooks without any hassle.</li><br>
+
+                <ul style="list-style-type: disc;"></ul>
+                <h3>Why Choose AudiLib?</h3>
+                    <li><b>Expert Curation:</b> Our team of literary experts curates collections that highlight the best in every genre, helping you find your next great listen.</li>
+                    <li><b>Community Focus:</b> Join a community of fellow audiobook lovers. Participate in discussions, share recommendations, and discover new favorites together.</li>
+                    <li><b>Accessibility:</b> We are committed to making audiobooks accessible to everyone. Our platform supports various devices, ensuring you can listen on the go, anytime, anywhere.</li>
+                    <li><b>Customer Support:</b> Our dedicated support team is always here to help. Whether you have a question about your membership or need assistance with our app, we are just a click away.</li>          
+            </p>  
+        </div>
+        <div class="genre" id="explore">
+            <h4>
+                Here some Genre, Select which interests you!
+            </h4>
+            <div class="card">
+                <img src="/images/fiction.jpeg">
+                <a href="/fiction.html"><h2 class="card-title">Fiction</h2></a>
+                
+            </div>
+            
+            <div class="card">
+                <img src="/images/self_help.jpg">
+                <a href="/self_help.html"><h2 class="card-title">Self-Help</h2></a>
+            </div>
+
+            <div class="card">
+                <img src="/images/th.jpeg">
+                <a href="/thriller.html"><h2 class="card-title">Thriller</h2></a>
+            </div>
+            
+            <div class="card">
+                <img src="/images/mystry.jpeg">
+                <a href="/mystery.html"><h2 class="card-title">Mystery</h2></a>
+            </div>
+
+            <div class="card">
+                <img src="/images/non-fiction.jpg">
+                <a href="/non_fiction.html"><h2 class="card-title">Non-Fiction</h2></a>
+            </div>
+
+            <div class="card">
+                <img src="/images/novel.webp">
+                <a href="/novel.html"><h2 class="card-title">Novel</h2></a>
+            </div>
+
+            <div class="card">
+                <img src="/images/romance.avif">
+                <a href="/romance.html"><h2 class="card-title">Romance</h2></a>
+            </div>
+
+            <div class="card">
+                <img src="/images/comedy.avif">
+                <a href="/comedy.html"><h2 class="card-title">Comedy</h2></a>
+            </div>
+        </div>
+    </main>
+    <br>
+    <br>
+    <br>
+
+    <div class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Reach out to us for any inquiries or feedback.</p>
+        <div class="row">
+            <div class="col information">
+                <div class="contact-details">
+                    <p><i class="fas fa-map-marker-alt"></i>SAGARIKA DUBEY</p>
+                    <p><i class="fas fa-envelope"></i> sagarikardubey@mail.com</p>
+                    <p><i class="fas fa-clock"></i> Monday - Sunday: 9:00 AM - 5:00 PM</p>            
+                
+                </div>          
+            </div>
+            <div class="col form">
+                <form>
+                    <input type="text" placeholder="Name*" required>
+                    <input type="email" placeholder="Email*" required>
+                    <textarea placeholder="Message*" required></textarea>
+                    <button id="submit" type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h5>
+            Made with ❤️ By Sagarika
+        </h5>
+    </footer> 
+
+    <script>
+        // Add event listeners to the navigation links
+        document.getElementById('home-link').addEventListener('click', function() {
+            const HomeSection = document.getElementById('top');
+            HomeSection.scrollIntoView({ behavior: 'smooth' });
+        });
+
+        document.getElementById('about-us-link').addEventListener('click', function() {
+            const aboutUsSection = document.getElementById('abouts');
+            aboutUsSection.scrollIntoView({ behavior: 'smooth' });
+        });
+
+        document.getElementById('explore-link').addEventListener('click', function() {
+            const exploreSection = document.getElementById('explore');
+            exploreSection.scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+    <script>
+        const searchInput = document.getElementById('search-input');
+        const searchResults = document.getElementById('search-results');
+    
+        // Event listener for input in the search bar
+        searchInput.addEventListener('input', async function() {
+            const query = searchInput.value.trim();
+    
+            console.log("Search Query:", query);  // Log the query to check if it's being captured
+    
+            if (query.length > 0) {
+                try {
+                    // Sending search query to the server
+                    const response = await fetch('/search-books', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({ searchQuery: query })
+                    });
+    
+                    const data = await response.json();
+                    console.log("Search Results:", data);  // Log the response from the server
+    
+                    // Displaying search results
+                    if (data.success && data.books.length > 0) {
+                        displayBooks(data.books);
+                    } else {
+                        searchResults.innerHTML = '<p>No books found matching your search.</p>';
+                    }
+                } catch (error) {
+                    console.error('Error fetching search results:', error);
+                    searchResults.innerHTML = '<p>Something went wrong. Please try again later.</p>';
+                }
+            } else {
+                searchResults.innerHTML = '';  // Clear results when input is empty
+            }
+        });
+    
+        // Function to display the books
+        function displayBooks(books) {
+            searchResults.innerHTML = '';  // Clear previous results
+    
+            books.forEach(book => {
+                const bookItem = document.createElement('div');
+                bookItem.classList.add('book-item');
+    
+                bookItem.innerHTML = `
+                    <h4>${book.title}</h4>
+                    <p><strong>Author:</strong> ${book.author}</p>
+                    <p>${book.description}</p>
+                `;
+    
+                searchResults.appendChild(bookItem);
+            });
+        }
+    </script>
+<script src="js/home.js"></script>
+</body>
+</html>
