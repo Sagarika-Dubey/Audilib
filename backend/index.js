@@ -14,12 +14,6 @@ const db=knex({
     }
 })
 
-const books = [
-    { title: "The Great Gatsby", author: "F. Scott Fitzgerald", description: "A novel about the American Dream." },
-    { title: "Moby Dick", author: "Herman Melville", description: "A story about a sea captain's obsession with a whale." },
-    { title: "1984", author: "George Orwell", description: "A dystopian novel about surveillance and control." }
-];
-
 const app = express();
 
 let initialPath = path.join(__dirname,"../frontend");
