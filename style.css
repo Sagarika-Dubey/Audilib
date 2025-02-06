@@ -448,13 +448,45 @@ footer{
     padding-top: 20px;
     font-size: 15px;
 }
-  .para-2 {
+.para-2 {
     text-align: center;
     color: rgb(10, 10, 10);
     font-size: 15px;
-    margin-top: -10px;
+    margin-top: -200px;
 }
 .para-2 a {
     color: #000000;
+}  
+
+.para-3 {
+    text-align: center;
+    color: rgb(10, 10, 10);
+    font-size: 15px;
+    
+}
+.para-3 a {
+    color: #000000;
 }
 
+.submit-btn {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    padding: 12px 20px; /* Add padding to the button */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make the button inline */
+    font-size: 16px; /* Increase font size */
+    margin: 10px 0; /* Add margin around the button */
+    cursor: pointer; /* Show a pointer cursor on hover */
+    border-radius: 5px; /* Round the corners of the button */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+  }
+  
+  .submit-btn:hover {
+    background-color: #45a049; /* Darken the button on hover */
+  }
+  
+  .submit-btn:active {
+    background-color: #3e8e41; /* Even darker when clicked */
+  }

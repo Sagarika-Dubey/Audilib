@@ -16,7 +16,7 @@ const db=knex({
 
 const app = express();
 
-let initialPath = path.join(__dirname,"../");
+let initialPath = path.join(__dirname,"./");
 
 app.use(session({
     secret: 'yourSecretKey', 
